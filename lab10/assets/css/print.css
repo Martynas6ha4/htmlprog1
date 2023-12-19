@@ -1,0 +1,9 @@
+@media print {
+    body {
+        font-family: 'Times New Roman', serif;
+    }
+    .print-link {
+        display: none; /* Hide elements that are not needed for printing */
+    }
+    /* Further styling rules for printing */
+}

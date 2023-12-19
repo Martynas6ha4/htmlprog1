@@ -1,0 +1,370 @@
+/* Resetting default styles */
+html, body, ul, ol, li, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding does not affect overall width */
+}
+
+/* Basic font settings */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    padding-left: 220px; /* Added padding to account for the sidebar */
+}
+
+/* Container for content */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    overflow: auto;
+    padding: 20px;
+}
+
+/* Header and section titles */
+h1, h2 {
+    font-family: 'Georgia', serif;
+    color: #444;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+
+/* About section */
+.about-content {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Profile image */
+.profile-img {
+    border-radius: 50%;
+    margin-right: 1rem;
+    max-width: 100%;
+}
+
+/* Personal details list */
+.personal-details ul {
+    list-style: none;
+}
+
+.personal-details ul li {
+    line-height: 1.5;
+}
+
+/* Link styles */
+a, button {
+    color: #007bff;
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effects for links */
+a:hover, button:hover {
+    color: #0056b3;
+    border-color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Portfolio section */
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 1rem;
+}
+
+.portfolio-item {
+    width: 100%;
+    height: auto;
+    border: 3px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.03);
+}
+
+/* Sidebar Navigation styles */
+#navbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    background: #333;
+    z-index: 1000;
+    padding: 20px;
+}
+
+
+#navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+#navbar ul li a:hover {
+    background-color: #575757;
+    color: #ddd;
+}
+.navbar-logo {
+    display: block;
+    margin: 0 auto 10px;
+    width: 120px; /* Adjust as needed */
+}
+.home-fullscreen {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+}
+.home-fullscreen h1 {
+    color: white;
+    font-weight: bold; /* Bold text for the header */
+    margin-bottom: 20px; /* Space between text and icons */
+}
+/* New class for the background image */
+.fullscreen-background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    max-width: 2000px;
+    max-height: 1500px;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+.social-icons-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-icons-header a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons-header img {
+    width: 30px; /* Adjust the size of the icons */
+    height: auto;
+}
+#home, .container {
+    padding-left: 220px; /* Adjust the padding to match the nav width */
+}
+#main-footer {
+    background: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 1rem 0;
+}
+#main-footer .social-icons a img {
+    width: 24px; /* Adjust the size of the icons */
+    height: auto;
+    margin: 0 5px; /* Adjust spacing around the icons */
+}
+.social-icons-navbar {
+    display: flex;
+    justify-content: center; /* Align icons horizontally */
+    margin: 10px 0; /* Space between image and navigation links */
+}
+
+.social-icons-navbar a {
+    margin: 0 5px; /* Horizontal spacing between icons */
+}
+
+.social-icons-navbar img {
+    width: 24px; /* Adjust the size of the icons */
+    height: auto;
+}
+#clock-container {
+    position: fixed; /* Fixed position to stay in the top right corner */
+    top: 10px;
+    right: 10px;
+    z-index: 10; /* Ensure it's above other content */
+}
+#contact .container {
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form input[type="tel"],
+#contact-form select {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #0056b3;
+}
+/* Lighting Control Styles */
+#control-buttons .control-btn {
+    background-color: #A9A9A9; /* Grey for off state */
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#control-buttons .control-btn.on {
+    background-color: #0000FF; /* Blue for on state */
+}
+#room-buttons .room-button-container {
+    display: inline-block;
+    margin: 10px; /* Spacing between room buttons */
+    text-align: center;
+}
+#room-buttons .room-btn {
+    background-color: #A9A9A9; /* Grey for off state */
+    width: 150px; /* Adjust the width as needed for squares */
+    height: 100px; /* Adjust the height as needed for rectangles */
+    border: 1px solid #000; /* Add border to distinguish shapes */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative; /* Position relative for the label */
+    text-align: center; /* Center the text for the label */
+    line-height: 100px; /* Align the text vertically */
+    font-weight: bold; /* Make label text bold */
+}
+#services {
+    text-align: center;
+    padding: 20px;
+}
+
+#services h1 {
+    margin-bottom: 20px;
+}
+
+#services video,
+#services iframe,
+#services audio {
+    margin-bottom: 20px;
+    max-width: 100%; /* Ensures the media fits within the container */
+}
+
+/*
+#room-buttons .room-btn[data-room="living-room"] {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#room-buttons .room-btn[data-room="kitchen"] {
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);
+}
+
+#room-buttons .room-btn[data-room="bedroom"] {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+#room-buttons .room-btn[data-room="bathroom"] {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+#room-buttons .room-btn[data-room="hallway"] {
+    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+}
+*/
+/* Class to apply when a room light is turned on */
+.room-on {
+    background-color: #FFFF00; /* Yellow for on state */
+}
+
+/* Update the button styles for 'on' state */
+#lighting-control .light-btn.on {
+    background-color: #0000FF; /* Blue for on state */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .about-content, .profile-img, .portfolio-gallery {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin: 0 auto 1rem auto;
+    }
+
+    .portfolio-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Adjust navbar for mobile */
+    #navbar {
+        width: 100%;
+        height: auto;
+        position: static;
+        padding: 10px;
+    }
+
+    body {
+        padding-left: 0;
+    }
+
+    #navbar ul li a {
+        padding: 10px;
+    }
+    .home-fullscreen {
+        height: auto;
+        padding: 50px 0;
+    }
+    #home, .container {
+        padding-left: 0;
+    }
+}
