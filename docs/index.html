@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <!-- Pradiniai nustatymai -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/print.css" media="print">   
+    <title>Martynas Šiaulianskis</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <!-- Laikrodžio konteineris -->
+    <div id="clock-container" style="position: absolute; top: 20px; right: 20px;">
+        <!-- SVG Laikrodis -->
+        <svg id="svg-clock" width="150px" height="150px" viewBox="0 0 100 100">
+            <!-- Laikrodžio veidas -->
+            <circle cx="50" cy="50" r="45" fill="white" stroke="black" stroke-width="2"/>
+            <!-- Laikrodžio rodyklės -->
+            <line id="hour-hand" x1="50" y1="50" x2="50" y2="30" stroke="black" stroke-width="2" transform="rotate(0 50 50)"/>
+            <line id="minute-hand" x1="50" y1="50" x2="50" y2="20" stroke="black" stroke-width="1.5" transform="rotate(0 50 50)"/>
+            <line id="second-hand" x1="50" y1="50" x2="50" y2="15" stroke="red" stroke-width="1" transform="rotate(0 50 50)"/>
+            <!-- Laikrodžio centras -->
+            <circle cx="50" cy="50" r="1" fill="black"/>
+        </svg>
+    </div>
+    <header id="home" class="home-fullscreen">
+        <img src="assets/img/background.jpg" alt="Background" class="fullscreen-background">
+        <h1>Martynas Šiaulianskis</h1>
+        <!-- Socialinių tinklų piktogramos antraštėje -->
+        <div class="social-icons-header">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="assets/img/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="assets/img/twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="assets/img/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+        <div class="math-equation">
+            <!-- Matematikos lygtis su MathJax -->
+            <p>\( f(a) = \frac{1}{2\pi i} \oint_\gamma \frac{f(z)}{z - a} dz \)</p>
+        </div>
+    </header>
+    <nav id="navbar">
+        <img src="assets/img/profile.jpg" alt="Website Logo" class="navbar-logo" width="200">
+        <!-- Socialinių tinklų piktogramos navigacijoje -->
+        <div class="social-icons-navbar">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="assets/img/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/" target="_blank">
+                <img src="assets/img/twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="assets/img/linkedin-icon.png" alt="LinkedIn">
+            </a>
+        </div>
+        <ul>
+            <li><a href="#home">Pradžia</a></li>
+            <li><a href="#about">Apie mane</a></li>
+            <li><a href="#resume">CV</a></li>
+            <li><a href="#portfolio">Darbai</a></li>
+            <li><a href="#contact">Kontaktai</a></li>
+        </ul>
+
+    </nav>
+    <!-- Apie mane skyrius -->
+    <section id="about" class="container">
+        <h1>Apie</h1>
+        <!-- Turinys apie mane -->
+        <div class="about-content">
+            <img src="assets/img/profile.jpg" alt="Martynas Šiaulianskis" class="profile-img" width="700">
+            <div>
+                <p>Studentas VGTU Universitete, kuris bando šiuo metu atsiskaityti už laboratorinius darbus.</p>
+                <!-- Asmeninės detalės -->
+                <div class="personal-details">
+                    <h2>Studentas</h2>
+                    <p>Studentas, kuris turi labai mažai laiko, ir partities gyvenime.</p>
+                    <ul>
+                        <li>Gimė: Balandzio 27d. 2003</li>
+                        <li>Metai: 20</li>
+                        <li>Telefonas: +987654</li>
+                        <li>Miestas: Vilnius, Lietuva</li>
+                        <li>Email: <a href="mailto:martynas.siaulianskis@stud.vilniustech.lt">martynas.siaulianskis@stud.vilniustech.lt</a></li>
+                        <li>Šiuo metu neturiu nieko gero ką rašyti.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gyvenimo aprašymas -->
+    <section id="resume" class="container">
+        <h1>Aprašymas</h1>
+        <!-- Gyvenimo aprašymo turinys -->
+        <div class="resume-content">
+            <h2>Santrauka</h2>
+            <p><strong>Martynas Šiaulianskis</strong> - Paprasciausias studentas, kuriam visados truksta laiko uzbaigti darbus iki galo, bet visados sugeba nustebinti ir viska sutvarkyti.</p>
+            <address>Žalioji g.10, Jokubavas, Kretingos r.</address>
+            <p>Tel: 12345678 | El. Paštas: <a href="mailto:martynas.siaulianskis@stud.vilniustech.lt">martynas.siaulianskis@stud.vilniustech.lt</a></p>
+            
+            <h2>Edukacija</h2>
+            <p><strong>Informacinį Sistemos Inžinierius Studentas</strong><br>2021 - Dabar<br>Vilnius Tech / Vilniaus Gedimino Technikos Universitetas, Vilnius<br>Šiuo metu vis dar studuoju VGTU universitete</p>
+            <p><strong>Vidurinis Išsilavinimas</strong><br>2014 - 2021<br>IES Joan Fuster Sueca & IES el Saler, Valencijos Regionas<br>Šiuose vietose įgijau savo vidurini išsilavinima, kuris man davė daug žiniu, patirties, ir gyvenimo įspūdžių.</p>
+            
+            <h2>Profesinė Patirtis</h2>
+            <p><strong>Kompiuterių Taisymas ir Statymas Internetu</strong><br>2017 - 2020<br>Valencija, Valencios Regionas, Ispanija</p>
+            <!-- Darbo patirtis sąrašas -->
+            <ul>
+                <li>Suprojektuoti ir surinkti aukštos našumo kompiuterių sistemas pagal klientų specifikacijas.</li>
+                <li>Ieškoti ir įsigyti kokybiškas komponentes konkurencingomis kainomis, kad sukurti kainos ir kokybės atžvilgiu efektyvius sprendimus.</li>
+                <li>Teikti technine pagalbą ir klientų aptarnavimą užtikrinant pasitenkinimą ir sugrįžtantį verslą.</li>
+                <li>Atlikti išsamius testavimus ir kokybės patikras prieš siuntą.</li>
+            </ul>
+            <a href="javascript:window.print()" class="print-link">Print</a>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="container">
+        <h1>Atlikti darbai</h1>
+        <div class="portfolio-gallery">
+            <img src="assets/img/portfolio/portfolio-1.jpg" alt="Completed Project 1" class="portfolio-item">
+            <img src="assets/img/portfolio/portfolio-2.jpg" alt="Completed Project 2" class="portfolio-item">
+            <img src="assets/img/portfolio/portfolio-3.jpg" alt="Completed Project 3" class="portfolio-item">
+            <img src="assets/img/portfolio/portfolio-4.jpg" alt="Completed Project 4" class="portfolio-item">
+        </div>
+    </section>
+    <section id="services" class="container">
+        <h1>cool videos ir audio</h1>
+        <!-- video -->
+        <video controls>
+            <source src="assets/music/aha.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- YouTube  -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RqYCSYhT9-w" frameborder="0" allowfullscreen></iframe>
+        <!-- Audio  -->
+        <audio controls>
+            <source src="assets/music/rick.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+    
+    <!-- Lighting Control  -->
+<section id="lighting-control" class="container">
+    <h1>Valdyk mano namu sviesa!</h1>
+    <div id="control-buttons">
+        <button class="control-btn" data-room="living-room">Living Room</button>
+        <button class="control-btn" data-room="kitchen">Kitchen</button>
+        <button class="control-btn" data-room="bedroom">Bedroom</button>
+        <button class="control-btn" data-room="bathroom">Bathroom</button>
+        <button class="control-btn" data-room="hallway">Hallway</button>
+    </div>
+    <div id="room-buttons">
+        <div class="room-button-container">
+            <input type="color" class="room-color-picker" data-room="living-room">
+            <button class="room-btn" data-room="living-room">Living Room</button>
+        </div>
+        <div class="room-button-container">
+            <input type="color" class="room-color-picker" data-room="kitchen">
+            <button class="room-btn" data-room="kitchen">Kitchen</button>
+        </div>
+        <div class="room-button-container">
+            <input type="color" class="room-color-picker" data-room="bedroom">
+            <button class="room-btn" data-room="bedroom">Bedroom</button>
+        </div>
+        <div class="room-button-container">
+            <input type="color" class="room-color-picker" data-room="bathroom">
+            <button class="room-btn" data-room="bathroom">Bathroom</button>
+        </div>
+        <div class="room-button-container">
+            <input type="color" class="room-color-picker" data-room="hallway">
+            <button class="room-btn" data-room="hallway">Hallway</button>
+        </div>
+    </div>
+</section>
+    <section id="contact" class="container">
+        <h1>Kontaktu formas</h1>
+        <form id="contact-form">
+            <input type="text" id="first-name" name="first_name" placeholder="First Name" required>
+            <input type="text" id="last-name" name="last_name" placeholder="Last Name" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+            <!-- Dropdown  -->
+            <select id="number-select" name="number" required>
+                <option value="">--Pasirink megstamiausia skaiciu--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <button type="submit">Issiusti</button>
+        </form>
+        <div id="form-output"></div>
+    </section>
+    <footer id="main-footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><img src="assets/img/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/img/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="assets/img/linkedin-icon.png" alt="LinkedIn"></a>
+            </div>
+            <div class="footer-content">
+                <p>Contact: martynas.siaulianskis@stud.vilniustech.lt</p>
+                <p>Tel num: +37064781079</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // JavaScript clock hands
+        function updateClock() {
+            var now = new Date();
+            var second = now.getSeconds();
+            var minute = now.getMinutes();
+            var hour = now.getHours();
+
+            var secondAngle = second * 6; // 360 degrees / 60 seconds
+            var minuteAngle = minute * 6 + second * 0.1; // 360 degrees / 60 minutes
+            var hourAngle = hour * 30 + minute * 0.5; // 360 degrees / 12 hours
+
+            document.getElementById('second-hand').setAttribute('transform', 'rotate(' + secondAngle + ' 50 50)');
+            document.getElementById('minute-hand').setAttribute('transform', 'rotate(' + minuteAngle + ' 50 50)');
+            document.getElementById('hour-hand').setAttribute('transform', 'rotate(' + hourAngle + ' 50 50)');
+
+            // Update every second
+            setTimeout(updateClock, 1000);
+        }
+        updateClock(); // Initial call to start the clock
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // from local storage
+    document.querySelectorAll('.light-btn').forEach(function(btn) {
+        var room = btn.getAttribute('data-room');
+        var state = localStorage.getItem(room) === 'on';
+        btn.classList.toggle('on', state);
+    });
+
+    // click event 
+    document.querySelectorAll('.light-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var room = btn.getAttribute('data-room');
+            btn.classList.toggle('on');
+            var state = btn.classList.contains('on') ? 'on' : 'off';
+            localStorage.setItem(room, state); // Save state to local storage
+        });
+    });
+});
+
+    </script>
+    <script>
+        // JavaScript contact form
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // variables 
+        var firstNameField = document.getElementById('first-name');
+        var lastNameField = document.getElementById('last-name');
+        var emailField = document.getElementById('email');
+        var phoneField = document.getElementById('phone');
+        var addressField = document.getElementById('address');
+        var numberSelectField = document.getElementById('number-select');
+
+        // error 
+        var errors = [];
+        
+        // Clear
+        firstNameField.style.backgroundColor = '';
+        lastNameField.style.backgroundColor = '';
+        emailField.style.backgroundColor = '';
+        phoneField.style.backgroundColor = '';
+        addressField.style.backgroundColor = '';
+
+        // checks
+        if (!emailField.value.includes('@')) {
+            errors.push('email');
+        }
+        if (isNaN(phoneField.value) || phoneField.value.length < 6) {
+            errors.push('phone');
+        }
+        if (addressField.value.length < 5) {
+            errors.push('address');
+        }
+
+        // color coding errors
+        var color = 'white'; // def color
+        if (errors.length > 0) {
+            color = errors.length === 1 ? 'orange' : 'red';
+            errors.forEach(function(field) {
+                document.getElementById(field).style.backgroundColor = color;
+            });
+
+            alert('Please correct the highlighted fields.');
+        } else {
+            // (no errors)
+            var concatenatedInfo = 'Vardas: ' + firstNameField.value + '<br>' +
+                                   'Pavarde: ' + lastNameField.value + '<br>' +
+                                   'Email: ' + emailField.value + '<br>' +
+                                   'Tel: ' + phoneField.value + '<br>' +
+                                   'Addresas: (' + addressField.value + ')<br>' +
+                                   'Numeris: ' + numberSelectField.value;
+
+            // local storage
+            localStorage.setItem('contactData', JSON.stringify({
+                first_name: firstNameField.value,
+                last_name: lastNameField.value,
+                email: emailField.value,
+                phone: phoneField.value,
+                address: addressField.value,
+                number: numberSelectField.value
+            }));
+            console.log('Saved Data:', concatenatedInfo);
+            
+            // output
+            var output = document.getElementById('form-output');
+            output.innerHTML = concatenatedInfo;
+            output.style.color = 'green'; // color for success message
+        }
+    });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    // update room button appearance
+    function updateRoomButtonAppearance(room) {
+        var controlBtn = document.querySelector('.control-btn[data-room="' + room + '"]');
+        var roomBtn = document.querySelector('.room-btn[data-room="' + room + '"]');
+        var colorPicker = document.querySelector('.room-color-picker[data-room="' + room + '"]');
+        var isOn = controlBtn.classList.contains('on');
+
+        controlBtn.style.backgroundColor = isOn ? '#0000FF' : '#A9A9A9'; // Blue for 'on', grey for 'off'
+        roomBtn.style.backgroundColor = isOn ? colorPicker.value : '#A9A9A9'; // Color picker value if 'on', grey for 'off'
+    }
+
+    // toggle room state
+    function toggleRoomState(room) {
+        var controlBtn = document.querySelector('.control-btn[data-room="' + room + '"]');
+        controlBtn.classList.toggle('on'); // Toggle the 'on' class
+        updateRoomButtonAppearance(room); // Update appearance based on new state
+
+        // local storage
+        var isOn = controlBtn.classList.contains('on');
+        localStorage.setItem(room, isOn ? 'on' : 'off');
+    }
+
+    // Load initial state from local storage and set up event listeners
+    document.querySelectorAll('.control-btn').forEach(function(btn) {
+        var room = btn.getAttribute('data-room');
+        var isOn = localStorage.getItem(room) === 'on';
+        btn.classList.toggle('on', isOn);
+        updateRoomButtonAppearance(room); // initial appearance
+
+        // control buttons
+        btn.addEventListener('click', function() {
+            toggleRoomState(room);
+        });
+    });
+
+    // color pickers
+    document.querySelectorAll('.room-color-picker').forEach(function(picker) {
+        var room = picker.getAttribute('data-room');
+        picker.addEventListener('input', function() {
+            if (document.querySelector('.control-btn[data-room="' + room + '"]').classList.contains('on')) {
+                updateRoomButtonAppearance(room); // Update appearance if the room is 'on'
+            }
+            // Save the selected color to localStorage
+            localStorage.setItem(`room-color-${room}`, picker.value);
+        });
+    });
+
+    // room buttons
+    document.querySelectorAll('.room-btn').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            var room = btn.getAttribute('data-room');
+            toggleRoomState(room);
+        });
+    });
+});
+
+    </script>
+    
+</body>
+</html>
